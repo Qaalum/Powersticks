@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "lockmod",
+  "id": "powersticks",
   "version": "${version}",
 
-  "name": "Lock Mod",
-  "description": "Adds locks which allow restriction to use of items, as well as keys to allow their use.",
+  "name": "Power Sticks",
+  "description": "Adds scepters and wands which execute commands upon right-clicking.",
   "authors": [
     "Qaalum"
   ],
 
   "license": "MIT License",
-  "icon": "assets/lockmod/icon.png",
+  "icon": "assets/powersticks/textures/item/Scepter.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.Qaalum.lockmod.LockMod"
+      "net.Qaalum.powersticks.PowerSticks"
     ],
     "client": [
-      "net.Qaalum.lockmod.LockModClient"
+      "net.Qaalum.powersticks.PowerSticksClient"
     ]
   },
   "mixins": [
-    "lockmod.mixins.json"
-  ],
+  "powersticks.mixins.json"
+],
 
   "depends": {
     "fabricloader": ">=0.14.11",
